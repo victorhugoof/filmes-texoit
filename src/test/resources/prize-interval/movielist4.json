@@ -1,0 +1,18 @@
+{
+  "min": [
+    {
+      "producer": "Producer 7",
+      "interval": 100,
+      "previousWin": "1999",
+      "followingWin": "2099"
+    }
+  ],
+  "max": [
+    {
+      "producer": "Producer 7",
+      "interval": 100,
+      "previousWin": "1999",
+      "followingWin": "2099"
+    }
+  ]
+}

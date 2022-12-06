@@ -89,7 +89,12 @@ public class MovieControllerTests {
     }
 
     @ParameterizedTest
-    @CsvSource({"/prize-interval/movielist", "/prize-interval/movielist2"})
+    @CsvSource({
+            "/prize-interval/movielist",
+            "/prize-interval/movielist2",
+            "/prize-interval/movielist3",
+            "/prize-interval/movielist4",
+    })
     void testPrizeInterval(String fileName) throws IOException {
         var inputResource = String.format("classpath:%s.csv", fileName);
         var outputResource = String.format("classpath:%s.json", fileName);

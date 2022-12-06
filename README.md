@@ -36,7 +36,8 @@
     ```
 
 ## Endpoints disponívels
+
 - GET http://localhost:8080/movie
-  - Lista todos os filmes cadastrados
+    - Lista todos os filmes cadastrados
 - GET http://localhost:8080/movie/prize-interval
-  - Retorna o intervalo de prêmios
+    - Retorna o intervalo de prêmios
