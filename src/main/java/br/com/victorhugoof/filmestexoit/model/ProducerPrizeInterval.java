@@ -1,10 +1,12 @@
 package br.com.victorhugoof.filmestexoit.model;
 
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.time.Year;
 
+@EqualsAndHashCode(of = {"producer", "interval"})
 @Builder
 @Getter
 public class ProducerPrizeInterval {

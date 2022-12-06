@@ -1,27 +1,36 @@
-# Read Me First
+## Requisitos
 
-The following was discovered as part of building this project:
+- Java 17
 
-* The original package name 'br.com.victorhugoof.filmes-texoit' is invalid and this project uses 'br.com.victorhugoof.filmestexoit' instead.
+## Executar os tests
 
-# Getting Started
+- Bash
+    ```shell
+    ./mvnw test
+    ```
+- Cmd
+    ```shell
+    ./mvnw.cmd test
+    ```
 
-### Reference Documentation
+## Executar a aplicação
 
-For further reference, please consider the following sections:
+- Bash
+    ```shell
+    ./mvnw spring-boot:run
+    ```
+- Cmd
+    ```shell
+    ./mvnw.cmd spring-boot:run
+    ```
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.0.0/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.0.0/maven-plugin/reference/html/#build-image)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/3.0.0/reference/htmlsingle/#data.sql.jpa-and-spring-data)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.0.0/reference/htmlsingle/#web)
+## Iniciar a aplicação com CSV de filmes personalizado
 
-### Guides
-
-The following guides illustrate how to use some features concretely:
-
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-
+- Bash
+    ```shell
+    ./mvnw spring-boot:run -Dspring-boot.run.arguments="--filmes-texoit.movielist-csv-file={{FILE_PATH}}"
+    ```
+- Cmd
+    ```shell
+    ./mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--filmes-texoit.movielist-csv-file={{FILE_PATH}}"
+    ```

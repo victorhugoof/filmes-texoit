@@ -10,6 +10,7 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -20,6 +21,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@EqualsAndHashCode(of = "id", callSuper = false)
 @Getter
 @Setter
 @NoArgsConstructor
