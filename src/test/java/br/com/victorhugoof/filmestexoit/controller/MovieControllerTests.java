@@ -94,6 +94,7 @@ public class MovieControllerTests {
             "/prize-interval/movielist2",
             "/prize-interval/movielist3",
             "/prize-interval/movielist4",
+            "/prize-interval/movielist5",
     })
     void testPrizeInterval(String fileName) throws IOException {
         var inputResource = String.format("classpath:%s.csv", fileName);

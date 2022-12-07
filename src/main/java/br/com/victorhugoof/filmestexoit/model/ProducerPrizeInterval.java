@@ -6,7 +6,7 @@ import lombok.Getter;
 
 import java.time.Year;
 
-@EqualsAndHashCode(of = {"producer", "interval"})
+@EqualsAndHashCode
 @Builder
 @Getter
 public class ProducerPrizeInterval {
